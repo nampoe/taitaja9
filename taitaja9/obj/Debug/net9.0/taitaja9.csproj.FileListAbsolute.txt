@@ -1,0 +1,5 @@
+C:\Users\jani\source\repos\taitaja9\obj\Debug\net9.0\taitaja9.csproj.AssemblyReference.cache
+C:\Users\jani\source\repos\taitaja9\obj\Debug\net9.0\taitaja9.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jani\source\repos\taitaja9\obj\Debug\net9.0\taitaja9.AssemblyInfoInputs.cache
+C:\Users\jani\source\repos\taitaja9\obj\Debug\net9.0\taitaja9.AssemblyInfo.cs
+C:\Users\jani\source\repos\taitaja9\obj\Debug\net9.0\taitaja9.csproj.CoreCompileInputs.cache
