@@ -3,6 +3,7 @@ using YamlDotNet.Serialization.NamingConventions;
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Reflection;
 
 
 
@@ -77,7 +78,7 @@ public class Program
                     Console.Write("Anna nimi haettavaksi: ");
                     string haku = Console.ReadLine().ToLower();
 
-                    var loydetyt = people.FindAll(t => t.Name.ToLower().Contains(haku));
+                    var loydetyt = people.FindAll(t => t.Laji.ToLower().Contains(haku))
 
                     if (loydetyt.Count() > 0)
                     {
@@ -88,6 +89,7 @@ public class Program
 
                         foreach (var t in loydetyt)
                         {
+                            
                             Console.WriteLine("{0,-20} {1,-15} {2,-10}", t.Name, t.Laji, t.Tulos);
                         }
                     }
