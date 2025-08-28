@@ -54,11 +54,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jani\\source\\repos\\taitaja9\\taitaja9.csproj",
+      "projectUniqueName": "C:\\Users\\jani\\Documents\\GitHub\\taitaja9\\taitaja9\\taitaja9.csproj",
       "projectName": "taitaja9",
-      "projectPath": "C:\\Users\\jani\\source\\repos\\taitaja9\\taitaja9.csproj",
+      "projectPath": "C:\\Users\\jani\\Documents\\GitHub\\taitaja9\\taitaja9\\taitaja9.csproj",
       "packagesPath": "C:\\Users\\jani\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jani\\source\\repos\\taitaja9\\obj\\",
+      "outputPath": "C:\\Users\\jani\\Documents\\GitHub\\taitaja9\\taitaja9\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
