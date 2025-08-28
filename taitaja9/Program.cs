@@ -38,11 +38,6 @@ public class Program
         while (true)
         {
 
-
-
-
-
-
             Console.WriteLine("Mitä haluat tehdä?\n1 - Lisätä henkilön\n2 - Etsiä henkilön\n3 - Listata henkilöt");
             int.TryParse(Console.ReadLine(), out int act);
 
@@ -79,7 +74,29 @@ public class Program
 
                 case 2:
 
-                    // pitää lisää tää pmo
+                    Console.Write("Anna nimi haettavaksi: ");
+                    string haku = Console.ReadLine().ToLower();
+
+                    var loydetyt = people.FindAll(t => t.Name.ToLower().Contains(haku));
+
+                    if (loydetyt.Count() > 0)
+                    {
+                        Console.ForegroundColor = ConsoleColor.Cyan;
+                        Console.WriteLine("\n{0,-20} {1,-15} {2,-10}", "Nimi", "Laji", "Tulos");
+                        Console.WriteLine(new string('-', 50));
+                        Console.ResetColor();
+
+                        foreach (var t in loydetyt)
+                        {
+                            Console.WriteLine("{0,-20} {1,-15} {2,-10}", t.Name, t.Laji, t.Tulos);
+                        }
+                    }
+                    else
+                    {
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine("Ei tuloksia annetulla nimellä.");
+                        Console.ResetColor();
+                    }
 
                     break;
 
@@ -87,18 +104,18 @@ public class Program
                 case 3:
 
                     Console.WriteLine();
-                    
+
                     int nameWidth = Math.Max(4, people.Count > 0 ? people.Max(p => p.Name.Length) : 4);
                     int lajiWidth = Math.Max(4, people.Count > 0 ? people.Max(p => p.Laji.Length) : 4);
                     int tulosWidth = Math.Max(5, people.Count > 0 ? people.Max(p => p.Tulos.ToString().Length) : 5);
 
-                    
+
                     Console.WriteLine($"{"Nimi".PadRight(nameWidth)}  {"Laji".PadRight(lajiWidth)}  {"Tulos".PadRight(tulosWidth)}");
 
-                    
+
                     Console.WriteLine(new string('-', nameWidth + lajiWidth + tulosWidth + 4));
 
-                    
+
                     foreach (var p in people)
                     {
                         Console.WriteLine($"{p.Name.PadRight(nameWidth)}  {p.Laji.PadRight(lajiWidth)}  {p.Tulos.ToString().PadRight(tulosWidth)}");
@@ -113,16 +130,16 @@ public class Program
             }
 
 
-
-
-
-
             System.Threading.Thread.Sleep(1000);
 
 
         }
     }
+
+
+
 }
+
 
 public class Person
 {
@@ -130,3 +147,4 @@ public class Person
     public string Laji { get; set; }
     public double Tulos { get; set; }
 }
+
