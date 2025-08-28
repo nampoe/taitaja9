@@ -1,0 +1,5 @@
+C:\Users\mico\Documents\GitHub\taitaja9\taitaja9\obj\Debug\net9.0\taitaja9.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mico\Documents\GitHub\taitaja9\taitaja9\obj\Debug\net9.0\taitaja9.AssemblyInfoInputs.cache
+C:\Users\mico\Documents\GitHub\taitaja9\taitaja9\obj\Debug\net9.0\taitaja9.AssemblyInfo.cs
+C:\Users\mico\Documents\GitHub\taitaja9\taitaja9\obj\Debug\net9.0\taitaja9.csproj.CoreCompileInputs.cache
+C:\Users\mico\Documents\GitHub\taitaja9\taitaja9\obj\Debug\net9.0\taitaja9.sourcelink.json
