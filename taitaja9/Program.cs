@@ -1,13 +1,8 @@
 ﻿using System;
-
-enum Henkilo
-{
-    Matti,
-    Maija,
-    Pekka,
-    Liisa,
-    Oona
-}
+using System.Collections.Generic;
+using System.IO;
+using YamlDotNet.Serialization;
+using YamlDotNet.Serialization.NamingConventions;
 
 class Program
 {
@@ -23,17 +18,35 @@ __        __   _
         Console.WriteLine("Paina mitä vaan näppäintä aloittaaksesi...");
         Console.ReadKey(true);
         Console.WriteLine("Aloitettu");
+        var nimet = LueNimetYamlista("henkilot.yaml");
 
         Console.Write("Hae henkilöä: ");
         string syote = Console.ReadLine();
 
-        if (Enum.TryParse<Henkilo>(syote, ignoreCase: true, out var loydetty))
+        if (nimet.Contains(syote, StringComparer.OrdinalIgnoreCase))
         {
-            Console.WriteLine($"Henkilö '{loydetty}' löytyi listasta.");
+            Console.WriteLine($"Henkilö '{syote}' löytyi listasta.");
         }
         else
         {
             Console.WriteLine($"Henkilöä '{syote}' ei löytynyt.");
         }
+    }
+
+    static List<string> LueNimetYamlista(string polku)
+    {
+        if (!File.Exists(polku))
+        {
+            Console.WriteLine($"Tiedostoa '{polku}' ei löytynyt.");
+            return new List<string>();
+        }
+
+        var deserializer = new DeserializerBuilder()
+            .WithNamingConvention(CamelCaseNamingConvention.Instance)
+            .Build();
+
+        using var reader = new StreamReader(polku);
+        var yamlObj = deserializer.Deserialize<Dictionary<string, List<string>>>(reader);
+        return yamlObj.TryGetValue("names", out var nimet) ? nimet : new List<string>();
     }
 }
