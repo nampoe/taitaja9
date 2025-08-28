@@ -12,15 +12,19 @@ namespace taitaja9
             Console.Write("Anna laji");                     //kysytään käyttäjältä laji hakemista ja suodatusta varten
             string laji = Console.ReadLine();
 
-            Console.Write("Anna pisteet");                     //kysytään käyttäjältä pisteet suodatusta varten
+            Console.Write("Anna pisteet");                  //kysytään käyttäjältä pisteet suodatusta varten
             string pisteetSyote = Console.ReadLine();
-            int pisteet = int.Parse(pisteetSyote);
+            int pisteet;
+            while (!int.TryParse(pisteetSyote, out pisteet))        // tämä varmistaa että syöte on numero, jos se ei ole niin se kysyy uudelleen.
+            {
+                Console.Write("Virheellinen syöte. Anna pisteet numerona: ");
+                pisteetSyote = Console.ReadLine();
+            }
+
+            Console.BackgroundColor = ConsoleColor.DarkBlue;
+            Console.Clear(); // Päivittää koko konsolin taustavärin
 
             Console.WriteLine($"Nimi: {nimi}, Laji: {laji}, Pisteet: {pisteet}");   //konsoli tulostaa nimen, lajin ja pisteet ruudulle.   Sitten ohjelma siirtää tiedot yamliin
-
-
-
-
         }
     }
 }
