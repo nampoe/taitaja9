@@ -16,7 +16,7 @@ namespace taitaja9
             string pisteetSyote = Console.ReadLine();
             int pisteet = int.Parse(pisteetSyote);
 
-            Console.WriteLine($"Nimi: {nimi}, Laji: {laji}, Pisteet: {pisteet}");   //konsoli tulostaa nimen, lajin ja pisteet ruudulle.    Sitten ohjelma siirtää tiedot yamliin
+            Console.WriteLine($"Nimi: {nimi}, Laji: {laji}, Pisteet: {pisteet}");   //konsoli tulostaa nimen, lajin ja pisteet ruudulle.   Sitten ohjelma siirtää tiedot yamliin
 
 
 
