@@ -69,37 +69,101 @@ public class Program
 
                     Console.WriteLine("\nHenkilö lisätty.\n");
 
-                    break;
-
+                    break; // lisätä henkilöitä
 
                 case 2:
 
-                    Console.Write("Anna nimi haettavaksi: ");
-                    string haku = Console.ReadLine().ToLower();
+                    Console.WriteLine("Miten haluat etsiä henkilöjä?\n1 - Nimen mukaan.\n2 - Lajin mukaan.\n3 - Tuloksen mukaan.");
+                    int.TryParse(Console.ReadLine(), out int haku3);
 
-                    var loydetyt = people.FindAll(t => t.Name.ToLower().Contains(haku));
-
-                    if (loydetyt.Count() > 0)
+                    switch (haku3)
                     {
-                        Console.ForegroundColor = ConsoleColor.Cyan;
-                        Console.WriteLine("\n{0,-20} {1,-15} {2,-10}", "Nimi", "Laji", "Tulos");
-                        Console.WriteLine(new string('-', 50));
-                        Console.ResetColor();
+                        case 1:
+                            Console.Write("Anna nimi haettavaksi: ");
+                            string haku = Console.ReadLine().ToLower();
 
-                        foreach (var t in loydetyt)
-                        {
-                            Console.WriteLine("{0,-20} {1,-15} {2,-10}", t.Name, t.Laji, t.Tulos);
-                        }
-                    }
-                    else
-                    {
-                        Console.ForegroundColor = ConsoleColor.Red;
-                        Console.WriteLine("Ei tuloksia annetulla nimellä.");
-                        Console.ResetColor();
-                    }
+                            var loydetyt = people.FindAll(t => t.Name.ToLower().Contains(haku));
 
-                    break;
+                            if (loydetyt.Count() > 0)
+                            {
+                                
+                                Console.WriteLine("\n{0,-20} {1,-15} {2,-10}", "Nimi", "Laji", "Tulos");
+                                Console.WriteLine(new string('-', 50));
+                                Console.ResetColor();
 
+                                foreach (var t in loydetyt)
+                                {
+                                    Console.WriteLine("{0,-20} {1,-15} {2,-10}", t.Name, t.Laji, t.Tulos);
+                                }
+                            }
+                            else
+                            {
+                                Console.ForegroundColor = ConsoleColor.Red;
+                                Console.WriteLine("Ei tuloksia annetulla nimellä.");
+                                Console.ResetColor();
+                            }
+
+                            break; // nimi 
+
+                        case 2:
+                            Console.Write("Anna tulos haettavaksi: ");
+                            int.TryParse(Console.ReadLine(), out int tuloshaku);
+
+                            var loydetytTulokset = people.FindAll(t => t.Tulos == tuloshaku);
+
+                            if (loydetytTulokset.Count() > 0)
+                            {
+                                Console.ForegroundColor = ConsoleColor.Cyan;
+                                Console.WriteLine("\n{0,-20} {1,-15} {2,-10}", "Nimi", "Laji", "Tulos");
+                                Console.WriteLine(new string('-', 50));
+                                Console.ResetColor();
+
+                                foreach (var t in loydetytTulokset)
+                                {
+                                    Console.WriteLine("{0,-20} {1,-15} {2,-10}", t.Name, t.Laji, t.Tulos);
+                                }
+                            }
+                            else
+                            {
+                                Console.ForegroundColor = ConsoleColor.Red;
+                                Console.WriteLine("Ei tuloksia annetulla tuloksella.");
+                                Console.ResetColor();
+                            }
+                            break; // tulos
+
+                        case 3:
+                            Console.Write("Anna laji haettavaksi: ");
+                            string lajiHaku = Console.ReadLine().ToLower();
+
+                            var loydetytLajit = people.FindAll(t => t.Laji.ToLower().Contains(lajiHaku));
+
+                                if (loydetytLajit.Count() > 0)
+                                {
+                                Console.ForegroundColor = ConsoleColor.Cyan;
+                                Console.WriteLine("\n{0,-20} {1,-15} {2,-10}", "Nimi", "Laji", "Tulos");
+                                Console.WriteLine(new string('-', 50));
+                                Console.ResetColor();
+
+                                foreach (var t in loydetytLajit)
+                                {
+
+                                    Console.WriteLine("{0,-20} {1,-15} {2,-10}", t.Name, t.Laji, t.Tulos);
+                                }
+                            }
+                            else
+                            {
+                                Console.ForegroundColor = ConsoleColor.Red;
+                                Console.WriteLine("Ei tuloksia annetulla lajilla.");
+                                Console.ResetColor();
+                            }
+
+                            break; // laji
+
+                        default:
+                            Console.WriteLine("pmo");
+                            break;
+                    }break;
+                    
 
                 case 3:
 
@@ -123,7 +187,7 @@ public class Program
                     Console.WriteLine("\n\n");
 
 
-                    break;
+                    break;// listata henkilöt
 
                 default:
                     break;
@@ -135,9 +199,6 @@ public class Program
 
         }
     }
-
-
-
 }
 
 
