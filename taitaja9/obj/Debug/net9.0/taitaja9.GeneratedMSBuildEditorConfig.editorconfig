@@ -8,11 +8,7 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = taitaja9
-<<<<<<< HEAD
 build_property.ProjectDir = C:\Users\mico\Documents\GitHub\taitaja9\taitaja9\
-=======
-build_property.ProjectDir = C:\Users\Kati\Documents\Git-testi\uus\taitaja9\taitaja9\
->>>>>>> c490d8e420a84147d05457068f185cb992a734e8
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
