@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "6EUZeISVLVI=",
+  "dgSpecHash": "6ERP7qhiRfM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Luka Forsström\\OneDrive - Kouvolan Ammattiopisto Oy, Eduko\\Tiedostot\\GitHub\\taitaja9\\taitaja9\\taitaja9.csproj",
+  "projectFilePath": "C:\\Users\\mico\\Documents\\GitHub\\taitaja9\\taitaja9\\taitaja9.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Luka Forsström\\.nuget\\packages\\yamldotnet\\16.3.0\\yamldotnet.16.3.0.nupkg.sha512"
+    "C:\\Users\\mico\\.nuget\\packages\\yamldotnet\\16.3.0\\yamldotnet.16.3.0.nupkg.sha512"
   ],
   "logs": []
 }
