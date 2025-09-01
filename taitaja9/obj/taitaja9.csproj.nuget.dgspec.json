@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Kati\\Documents\\Git-testi\\uus\\taitaja9\\taitaja9\\taitaja9.csproj": {}
+    "C:\\Users\\mico\\Documents\\GitHub\\taitaja9\\taitaja9\\taitaja9.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Kati\\Documents\\Git-testi\\uus\\taitaja9\\taitaja9\\taitaja9.csproj": {
+    "C:\\Users\\mico\\Documents\\GitHub\\taitaja9\\taitaja9\\taitaja9.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kati\\Documents\\Git-testi\\uus\\taitaja9\\taitaja9\\taitaja9.csproj",
+        "projectUniqueName": "C:\\Users\\mico\\Documents\\GitHub\\taitaja9\\taitaja9\\taitaja9.csproj",
         "projectName": "taitaja9",
-        "projectPath": "C:\\Users\\Kati\\Documents\\Git-testi\\uus\\taitaja9\\taitaja9\\taitaja9.csproj",
-        "packagesPath": "C:\\Users\\Kati\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kati\\Documents\\Git-testi\\uus\\taitaja9\\taitaja9\\obj\\",
+        "projectPath": "C:\\Users\\mico\\Documents\\GitHub\\taitaja9\\taitaja9\\taitaja9.csproj",
+        "packagesPath": "C:\\Users\\mico\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mico\\Documents\\GitHub\\taitaja9\\taitaja9\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Kati\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mico\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

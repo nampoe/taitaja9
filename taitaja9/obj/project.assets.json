@@ -48,23 +48,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Kati\\.nuget\\packages\\": {},
+    "C:\\Users\\mico\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Kati\\Documents\\Git-testi\\uus\\taitaja9\\taitaja9\\taitaja9.csproj",
+      "projectUniqueName": "C:\\Users\\mico\\Documents\\GitHub\\taitaja9\\taitaja9\\taitaja9.csproj",
       "projectName": "taitaja9",
-      "projectPath": "C:\\Users\\Kati\\Documents\\Git-testi\\uus\\taitaja9\\taitaja9\\taitaja9.csproj",
-      "packagesPath": "C:\\Users\\Kati\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Kati\\Documents\\Git-testi\\uus\\taitaja9\\taitaja9\\obj\\",
+      "projectPath": "C:\\Users\\mico\\Documents\\GitHub\\taitaja9\\taitaja9\\taitaja9.csproj",
+      "packagesPath": "C:\\Users\\mico\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mico\\Documents\\GitHub\\taitaja9\\taitaja9\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Kati\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mico\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -121,5 +121,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\mico\\Documents\\GitHub\\taitaja9\\taitaja9\\obj\\project.nuget.cache : '<' is an invalid start of a property name. Expected a '\"'. Path: $ | LineNumber: 2 | BytePositionInLine: 0."
+    }
+  ]
 }

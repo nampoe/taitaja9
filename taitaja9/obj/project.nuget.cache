@@ -1,10 +1,20 @@
 {
   "version": 2,
-  "dgSpecHash": "d2zDVn1wiCE=",
+  "dgSpecHash": "6ERP7qhiRfM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Kati\\Documents\\Git-testi\\uus\\taitaja9\\taitaja9\\taitaja9.csproj",
+  "projectFilePath": "C:\\Users\\mico\\Documents\\GitHub\\taitaja9\\taitaja9\\taitaja9.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Kati\\.nuget\\packages\\yamldotnet\\16.3.0\\yamldotnet.16.3.0.nupkg.sha512"
+    "C:\\Users\\mico\\.nuget\\packages\\yamldotnet\\16.3.0\\yamldotnet.16.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "message": "Problem reading the cache file C:\\Users\\mico\\Documents\\GitHub\\taitaja9\\taitaja9\\obj\\project.nuget.cache : '<' is an invalid start of a property name. Expected a '\"'. Path: $ | LineNumber: 2 | BytePositionInLine: 0.",
+      "projectPath": "C:\\Users\\mico\\Documents\\GitHub\\taitaja9\\taitaja9\\taitaja9.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\mico\\Documents\\GitHub\\taitaja9\\taitaja9\\taitaja9.csproj",
+      "targetGraphs": []
+    }
+  ]
 }

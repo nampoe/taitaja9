@@ -13,7 +13,7 @@ public class Program
 
         Console.BackgroundColor = ConsoleColor.DarkBlue;
 
-        string filePath = "C:\\Users\\jani\\Documents\\GitHub\\taitaja9\\taitaja9\\data.yaml";
+        string filePath = "C:\\Users\\mico\\Documents\\GitHub\\taitaja9\\taitaja9\\data.yaml";
 
 
         // deserializer ja serializer
@@ -73,7 +73,7 @@ public class Program
 
                 case 2:
 
-                    Console.WriteLine("Miten haluat etsiä henkilöjä?\n1 - Nimen mukaan.\n2 - Lajin mukaan.\n3 - Tuloksen mukaan.");
+                    Console.WriteLine("Miten haluat etsiä henkilöjä?\n1 - Nimen mukaan.\n2 - Tuloksen mukaan.\n3 - Lajin mukaan.");
                     int.TryParse(Console.ReadLine(), out int haku3);
 
                     switch (haku3)
@@ -107,12 +107,34 @@ public class Program
 
                         case 2:
                             Console.Write("Anna tulos haettavaksi: ");
-                            int.TryParse(Console.ReadLine(), out int tuloshaku);
+                            string tulosInput = Console.ReadLine();
+
+                            if (!double.TryParse(tulosInput, out double tuloshaku))
+                            {
+                                Console.ForegroundColor = ConsoleColor.Red;
+                                Console.WriteLine("Virheellinen tulosmuoto. Käytä desimaalipistettä (esim. 12.5)");
+                                Console.ResetColor();
+                                break;
+                            }
 
                             var loydetytTulokset = people.FindAll(t => t.Tulos == tuloshaku);
 
-                            if (loydetytTulokset.Count() > 0)
+                            if (loydetytTulokset.Count > 0)
                             {
+                                Console.WriteLine("\nHaluatko järjestää tulokset?");
+                                Console.WriteLine("1 - Nouseva järjestys");
+                                Console.WriteLine("2 - Laskeva järjestys");
+                                string sortInput = Console.ReadLine();
+
+                                if (sortInput == "1")
+                                {
+                                    loydetytTulokset = loydetytTulokset.OrderBy(p => p.Tulos).ToList();
+                                }
+                                else if (sortInput == "2")
+                                {
+                                    loydetytTulokset = loydetytTulokset.OrderByDescending(p => p.Tulos).ToList();
+                                }
+
                                 Console.ForegroundColor = ConsoleColor.Cyan;
                                 Console.WriteLine("\n{0,-20} {1,-15} {2,-10}", "Nimi", "Laji", "Tulos");
                                 Console.WriteLine(new string('-', 50));
@@ -129,7 +151,8 @@ public class Program
                                 Console.WriteLine("Ei tuloksia annetulla tuloksella.");
                                 Console.ResetColor();
                             }
-                            break; // tulos
+                            break;
+
 
                         case 3:
                             Console.Write("Anna laji haettavaksi: ");
