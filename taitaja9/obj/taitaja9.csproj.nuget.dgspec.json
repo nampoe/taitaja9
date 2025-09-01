@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Luka Forsström\\OneDrive - Kouvolan Ammattiopisto Oy, Eduko\\Tiedostot\\GitHub\\taitaja9\\taitaja9\\taitaja9.csproj": {}
+    "C:\\Users\\Kati\\Documents\\Git-testi\\uus\\taitaja9\\taitaja9\\taitaja9.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Luka Forsström\\OneDrive - Kouvolan Ammattiopisto Oy, Eduko\\Tiedostot\\GitHub\\taitaja9\\taitaja9\\taitaja9.csproj": {
+    "C:\\Users\\Kati\\Documents\\Git-testi\\uus\\taitaja9\\taitaja9\\taitaja9.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Luka Forsström\\OneDrive - Kouvolan Ammattiopisto Oy, Eduko\\Tiedostot\\GitHub\\taitaja9\\taitaja9\\taitaja9.csproj",
+        "projectUniqueName": "C:\\Users\\Kati\\Documents\\Git-testi\\uus\\taitaja9\\taitaja9\\taitaja9.csproj",
         "projectName": "taitaja9",
-        "projectPath": "C:\\Users\\Luka Forsström\\OneDrive - Kouvolan Ammattiopisto Oy, Eduko\\Tiedostot\\GitHub\\taitaja9\\taitaja9\\taitaja9.csproj",
-        "packagesPath": "C:\\Users\\Luka Forsström\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Luka Forsström\\OneDrive - Kouvolan Ammattiopisto Oy, Eduko\\Tiedostot\\GitHub\\taitaja9\\taitaja9\\obj\\",
+        "projectPath": "C:\\Users\\Kati\\Documents\\Git-testi\\uus\\taitaja9\\taitaja9\\taitaja9.csproj",
+        "packagesPath": "C:\\Users\\Kati\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Kati\\Documents\\Git-testi\\uus\\taitaja9\\taitaja9\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Luka Forsström\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Kati\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -45,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
@@ -72,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

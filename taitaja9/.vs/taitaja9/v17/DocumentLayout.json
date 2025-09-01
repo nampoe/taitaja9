@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\mico\\Documents\\GitHub\\taitaja9\\taitaja9\\",
+  "WorkspaceRootPath": "C:\\Users\\Kati\\Documents\\Git-testi\\uus\\taitaja9\\taitaja9\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FC77F22A-F328-4D7D-A79D-1F783CF065F4}|taitaja9.csproj|c:\\users\\mico\\documents\\github\\taitaja9\\taitaja9\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FC77F22A-F328-4D7D-A79D-1F783CF065F4}|taitaja9.csproj|c:\\users\\kati\\documents\\git-testi\\uus\\taitaja9\\taitaja9\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FC77F22A-F328-4D7D-A79D-1F783CF065F4}|taitaja9.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -14,21 +14,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:591349899:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\mico\\Documents\\GitHub\\taitaja9\\taitaja9\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Kati\\Documents\\Git-testi\\uus\\taitaja9\\taitaja9\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\mico\\Documents\\GitHub\\taitaja9\\taitaja9\\Program.cs",
+              "ToolTip": "C:\\Users\\Kati\\Documents\\Git-testi\\uus\\taitaja9\\taitaja9\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAEUAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-28T07:36:25.598Z",
               "EditorCaption": ""
