@@ -48,7 +48,7 @@ namespace taitaja9
                 else
                 {
                     Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine("Ei tuloksia annetulla nimellä.");
+                    Console.WriteLine("Ei tuloksia annetulla nimellä.");        
                     Console.ResetColor();
                 }
             }
