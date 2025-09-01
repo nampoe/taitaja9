@@ -73,26 +73,28 @@ public class Program
                     break;
 
 
-                case 2:
-
-                    Console.Write("Anna nimi haettavaksi: ");
-                    string haku = Console.ReadLine().ToLower();
-
-                    var loydetyt = people.FindAll(t => t.Laji.ToLower().Contains(haku))
-
-                    if (loydetyt.Count() > 0)
+                Console.Write("Anna nimi haettavaksi: ");
+                string haku = Console.ReadLine().ToLower();
+                var loydetyt = people.FindAll(t => t.Laji.ToLower().Contains(haku)).OrderBy(t => t.Name); 
+                if (loydetyt.Count() > 0)
+                {
+                    Console.ForegroundColor = ConsoleColor.Cyan;
+                    Console.WriteLine("\n{0,-20} {1,-15} {2,-10}", "Nimi", "Laji", "Tulos");
+                    Console.WriteLine(new string('-', 50));
+                    Console.ResetColor();
+                    foreach (var t in loydetyt)
                     {
-                        Console.ForegroundColor = ConsoleColor.Cyan;
-                        Console.WriteLine("\n{0,-20} {1,-15} {2,-10}", "Nimi", "Laji", "Tulos");
-                        Console.WriteLine(new string('-', 50));
-                        Console.ResetColor();
-
-                        foreach (var t in loydetyt)
-                        {
-                            
-                            Console.WriteLine("{0,-20} {1,-15} {2,-10}", t.Name, t.Laji, t.Tulos);
-                        }
+                        Console.WriteLine("{0,-20} {1,-15} {2,-10}", t.Name, t.Laji, t.Tulos);
                     }
+                    }
+                    else
+                    {
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine("Ei tuloksia annetulla nimellä.");
+                        Console.ResetColor();
+                    }
+                    break;
+
                     else
                     {
                         Console.ForegroundColor = ConsoleColor.Red;
